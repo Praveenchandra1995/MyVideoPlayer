@@ -10,7 +10,6 @@ import {
   FaPlay,
 } from "react-icons/fa";
 
-import Info from "../Data/data";
 const VideoPlayer = ({ src, thumb, title, subtitle }) => {
   const videoRef = useRef(null);
   const intervalRef = useRef(null);
@@ -121,11 +120,57 @@ const VideoPlayer = ({ src, thumb, title, subtitle }) => {
       </>
     );
   };
-  const toggleFullScreen=()=>{
-    if()
-  }
+  const toggleMute = () => {
+    const currentVolume = videoRef.current.volume;
+    if (currentVolume > 0) {
+      videoRef.current.volume = 0;
+      setVolume(0);
+      setIsMuted(true);
+    }
+    videoRef.current.volume = 1;
+    setVolume(1);
+    setIsMuted(false);
+  };
+  const toggleFullScreen = () => {
+    if (!isFullScreen) {
+      if (videoRef.current.requestFullscreen) {
+        videoRef.current.requestFullscreen();
+      } else if (videoRef.current.mozRequestFullScreen) {
+        videoRef.current.mozRequestFullScreen();
+      } else if (videoRef.current.webkitRequestFullscreen) {
+        videoRef.current.webkitRequestFullscreen();
+      } else if (videoRef.current.msRequestFullscreen) {
+        videoRef.current.msRequestFullScreen();
+      }
+    } else {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      } else if (document.mozCancelFullScreen) {
+        document.mozCancelFullScreen();
+      } else if (document.webkitExitFullscreen) {
+        document.webkitRequestFullscreen();
+      } else if (document.msExitFullscreen) {
+        document.msExitFullscreen();
+      }
+    }
+    setIsFullScreen(!isFullScreen);
+  };
+  //listen for fullscreen change events(for existing fullscreen with ESC key)
+  document.addEventListener("fullscreenchange", () => {
+    setIsFullScreen(!!document.fullscreenElement);
+  });
+
+  //this effect cleans up the event listner when the component unmounts
+  useEffect(() => {
+    const handleFullScreenChange = () =>
+      setIsFullScreen(!document.fullscreenElement);
+    document.addEventListener("fullscreenchange", handleFullScreenChange);
+    return () => {
+      document.removeEventListener("fullscreenchange", handleFullScreenChange);
+    };
+  }, []);
   return (
-    <>
+    <div className="menu">
       <video
         className="video-player"
         ref={videoRef}
@@ -136,8 +181,14 @@ const VideoPlayer = ({ src, thumb, title, subtitle }) => {
         onPause={stopProgressLoop}
         controls={useNativeControls}
       />
-      {!useNativeControls && renderCustomControls()}
-    </>
+      <div className="video-info">
+        <h2>Title:{title}</h2>
+        <p>SubTitle:{subtitle}</p>
+      </div>
+      <div className="custom-controls">
+        {!useNativeControls && renderCustomControls()}
+      </div>
+    </div>
   );
 };
 export default VideoPlayer;
