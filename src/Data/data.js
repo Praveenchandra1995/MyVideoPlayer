@@ -10,7 +10,7 @@ var mediaJSON = {
             "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
           ],
           subtitle: "By Blender Foundation",
-          thumb: "images/BigBuckBunny.jpg",
+          thumb: "Images/buck.png",
           title: "Big Buck Bunny",
         },
         {
@@ -19,7 +19,7 @@ var mediaJSON = {
             "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
           ],
           subtitle: "By Blender Foundation",
-          thumb: "images/ElephantsDream.jpg",
+          thumb: "Images/elephant.png",
           title: "Elephant Dream",
         },
         {
@@ -29,7 +29,7 @@ var mediaJSON = {
             "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
           ],
           subtitle: "By Google",
-          thumb: "images/ForBiggerBlazes.jpg",
+          thumb: "Images/blazes.png",
           title: "For Bigger Blazes",
         },
         {
@@ -39,7 +39,7 @@ var mediaJSON = {
             "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
           ],
           subtitle: "By Google",
-          thumb: "images/ForBiggerEscapes.jpg",
+          thumb: "Images/escape.png",
           title: "For Bigger Escape",
         },
         {
@@ -49,7 +49,7 @@ var mediaJSON = {
             "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
           ],
           subtitle: "By Google",
-          thumb: "images/ForBiggerFun.jpg",
+          thumb: "Images/fun.png",
           title: "For Bigger Fun",
         },
         {
@@ -59,7 +59,7 @@ var mediaJSON = {
             "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
           ],
           subtitle: "By Google",
-          thumb: "images/ForBiggerJoyrides.jpg",
+          thumb: "Images/boy.png",
           title: "For Bigger Joyrides",
         },
         {
@@ -69,7 +69,7 @@ var mediaJSON = {
             "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4",
           ],
           subtitle: "By Google",
-          thumb: "images/ForBiggerMeltdowns.jpg",
+          thumb: "Images/melt.png",
           title: "For Bigger Meltdowns",
         },
         {
@@ -79,7 +79,7 @@ var mediaJSON = {
             "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
           ],
           subtitle: "By Blender Foundation",
-          thumb: "images/Sintel.jpg",
+          thumb: "Images/Sintel.png",
           title: "Sintel",
         },
         {
@@ -89,7 +89,7 @@ var mediaJSON = {
             "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4",
           ],
           subtitle: "By Garage419",
-          thumb: "images/SubaruOutbackOnStreetAndDirt.jpg",
+          thumb: "Images/car.png",
           title: "Subaru Outback On Street And Dirt",
         },
         {
@@ -99,7 +99,7 @@ var mediaJSON = {
             "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
           ],
           subtitle: "By Blender Foundation",
-          thumb: "images/TearsOfSteel.jpg",
+          thumb: "Images/steel.png",
           title: "Tears of Steel",
         },
         {
@@ -109,7 +109,7 @@ var mediaJSON = {
             "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4",
           ],
           subtitle: "By Garage419",
-          thumb: "images/VolkswagenGTIReview.jpg",
+          thumb: "Images/volkswagon.png",
           title: "Volkswagen GTI Review",
         },
         {
@@ -119,7 +119,7 @@ var mediaJSON = {
             "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4",
           ],
           subtitle: "By Garage419",
-          thumb: "images/WeAreGoingOnBullrun.jpg",
+          thumb: "Images/bull.png",
           title: "We Are Going On Bullrun",
         },
         {
@@ -129,7 +129,7 @@ var mediaJSON = {
             "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4",
           ],
           subtitle: "By Garage419",
-          thumb: "images/WhatCarCanYouGetForAGrand.jpg",
+          thumb: "Images/benz.png",
           title: "What care can you get for a grand?",
         },
       ],
