@@ -68,3 +68,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+##`Project structure`##
+First created react file .
+Then created the videofile component.
+Later with the help of props and map functionality.I displayed the information and added the video functinality with state creation and implemention of functionality.
+finally added the style with css and bootstrap.The css file is linked in html file with index.css.
